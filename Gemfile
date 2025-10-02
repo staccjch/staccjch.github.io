@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'jekyll'
 
+# Pin activesupport to a version compatible with Ruby 3.1
+gem 'activesupport', '~> 7.0'
+
 # Core plugins that directly affect site building
 group :jekyll_plugins do
     gem 'jekyll-archives-v2'
@@ -9,12 +12,12 @@ group :jekyll_plugins do
     gem 'jekyll-feed'
     gem 'jekyll-get-json'
     gem 'jekyll-imagemagick'
-    gem 'jekyll-jupyter-notebook'
+    # gem 'jekyll-jupyter-notebook'  # Disabled - template path issues
     gem 'jekyll-link-attributes'
     gem 'jekyll-minifier'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-regex-replace'
-    gem 'jekyll-scholar'
+    # gem 'jekyll-scholar'  # Disabled - no publication needs
     gem 'jekyll-sitemap'
     gem 'jekyll-tabs'
     gem 'jekyll-terser', :git => "https://github.com/RobertoJBeltran/jekyll-terser.git"
@@ -30,7 +33,7 @@ group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
-    gem 'observer'       # used by jekyll-scholar
+    # gem 'observer'       # used by jekyll-scholar (disabled)
     gem 'ostruct'        # used by jekyll-twitter-plugin
     # gem 'terser'         # used by jekyll-terser
     # gem 'unicode_utils' -- should be already installed by jekyll
