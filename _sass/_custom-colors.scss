@@ -1,0 +1,154 @@
+/*******************************************************************************
+ * Custom Soft Brown Color Scheme
+ ******************************************************************************/
+
+// 导入变量
+@import "variables";
+
+// 链接样式 - 加下划线（hover 时出现）或轻微变色/加粗
+a {
+  color: $link-color !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+    text-decoration: underline !important;
+    font-weight: 500 !important;
+  }
+  
+  &:focus {
+    color: $link-hover-color !important;
+    text-decoration: underline !important;
+  }
+}
+
+// 表格中的链接
+table.table a {
+  color: $link-color !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+    text-decoration: underline !important;
+    font-weight: 500 !important;
+  }
+}
+
+// 导航链接
+.nav-link {
+  color: $link-color !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+    text-decoration: underline !important;
+    font-weight: 500 !important;
+  }
+}
+
+// 按钮样式
+.btn {
+  background-color: $button-color !important;
+  border-color: $button-color !important;
+  color: white !important;
+  
+  &:hover {
+    background-color: $button-hover-color !important;
+    border-color: $button-hover-color !important;
+    color: white !important;
+  }
+  
+  &:focus {
+    background-color: $button-hover-color !important;
+    border-color: $button-hover-color !important;
+    color: white !important;
+  }
+}
+
+// 主要按钮
+.btn-primary {
+  background-color: $button-color !important;
+  border-color: $button-color !important;
+  
+  &:hover {
+    background-color: $button-hover-color !important;
+    border-color: $button-hover-color !important;
+  }
+}
+
+// 强调文本 (em/italic) - 颜色更亮、更轻盈，但没有 underline
+em, i, .italic {
+  color: $em-color !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+  text-decoration: none !important;
+}
+
+// 加粗文本 (strong/bold) - 保持深灰
+strong, b, .bold {
+  color: $strong-color !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+}
+
+// 主题颜色变量更新
+:root {
+  --global-theme-color: #{$link-color};
+  --global-hover-color: #{$link-hover-color};
+}
+
+// 暗色主题
+html[data-theme=dark] {
+  --global-theme-color: #{$em-color};
+  --global-hover-color: #{$link-color};
+}
+
+// 出版物链接
+.publications ol.bibliography li .author a {
+  color: $link-color !important;
+  border-bottom: 1px dashed $link-color !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+    border-bottom: 1px solid $link-hover-color !important;
+    text-decoration: none !important;
+  }
+}
+
+// 卡片链接
+.card a {
+  color: $link-color !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+    text-decoration: underline !important;
+  }
+}
+
+// 分页链接
+.pagination .page-item .page-link {
+  color: $link-color !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}
+
+// 社交链接
+.social .contact-icons a i::before {
+  color: $link-color !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}
+
+// 导航栏品牌链接
+.navbar-brand {
+  color: $link-color !important;
+  
+  &:hover {
+    color: $link-hover-color !important;
+  }
+}

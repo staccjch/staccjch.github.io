@@ -4,33 +4,34 @@ title: about
 permalink: /
 nav: true
 nav_order: 1
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: 2nd Year Data Science Graduate Student, <a href='https://analytics.georgetown.edu/' target='_blank'>Georgetown University</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: stacy_pic.jpg
   image_circular: false # crops the image to make it circular
+  image_style: "object-fit: cover; object-position: center top; height: 300px; width: 250px;"
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:stacy.c2000@gmail.com">stacy.c2000@gmail.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/staccjch97/" target="_blank">LinkedIn</a></p>
+    <p style="display: block; margin: 10px 0;"><i class="fas fa-download"></i> <a href="/al-folio/assets/pdf/JianChe_2025_Resume.pdf" target="_blank" class="btn btn-primary btn-sm">Download CV</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a **data science student** with a strong interest in applying computational methods to address pressing social issues, including **humanitarian crises**, **migration**, and the role of **digital technologies** in divided societies. My recent work includes developing *interactive dashboards* to visualize humanitarian incident data, analyzing *cultural representation gaps* in major museum collections, and using *natural language processing* to study narratives about Latin American migration.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I earned my undergraduate degree in **Econometrics** at the [University of Washington, Seattle](https://www.washington.edu/), where I built a solid foundation in *quantitative social studies research*, *statistics*, and *programming*. Now pursuing graduate studies in data science at [Georgetown University](https://analytics.georgetown.edu/), I continue to focus on projects that combine *rigorous analysis*, *storytelling*, and *visualization* to highlight underrepresented perspectives and inform public policy.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Beyond academics, I enjoy practicing **Pilates** and **barre** as a way to stay grounded and energized. I also share life with a *mischievous and affectionate cat*, who reminds me to balance work with play.

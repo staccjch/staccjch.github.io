@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="post">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="post-description">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <article>
+    {% if page.cv_pdf %}
+      <div class="cv-pdf-container">
+        <iframe 
+          src="{% if page.cv_pdf contains '://' %}{{ page.cv_pdf }}{% else %}{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}{% endif %}#toolbar=1&navpanes=1&scrollbar=1"
+          width="100%" 
+          height="800px"
+          style="border: 1px solid #ddd; border-radius: 8px;"
+          title="CV PDF">
+        </iframe>
+      </div>
+    {% else %}
+      <p>No PDF file specified for CV.</p>
+    {% endif %}
+  </article>
+</div>
+
+<style>
+.cv-pdf-container {
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .cv-pdf-container iframe {
+    height: 600px;
+  }
+}
+</style>
