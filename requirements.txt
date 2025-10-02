@@ -1,1 +1,2 @@
-nbconvert
+# Empty requirements file - Python dependencies removed
+# Jupyter notebook functionality has been disabled
